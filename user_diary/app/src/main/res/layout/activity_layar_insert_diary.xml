@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".RegistrasiActivity">
+
+
+
+    <TextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blankTop"
+        android:text="How is Your Day???"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_welcome"
+        android:text="create yaour diary :)"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_below="@id/txv_version"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dear" />
+
+    <Button
+        android:id="@+id/addphoto"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Add Photo" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/addphoto"
+        android:text="Judul " />
+
+    <EditText
+        android:id="@+id/judull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addphoto"
+        android:layout_alignStart="@+id/judul"
+        android:inputType="text"
+        android:layout_alignLeft="@+id/judul">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/judull"
+        android:layout_alignStart="@+id/judull"
+        android:layout_below="@+id/judull"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal" />
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:inputType="date"
+        android:layout_alignLeft="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/judull"
+        android:layout_alignStart="@+id/judull"
+        android:layout_below="@+id/tanggal"
+        android:layout_marginTop="10dp"
+        android:text="Isi" />
+
+    <EditText
+        android:id="@+id/isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/judull"
+        android:layout_alignStart="@+id/judull"
+        android:layout_below="@+id/isi"
+        android:layout_marginTop="10dp"
+        android:text="Mood" />
+
+    <EditText
+        android:id="@+id/mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView5"/>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/judull"
+        android:layout_alignStart="@+id/judull"
+        android:layout_below="@+id/mood"
+        android:layout_marginTop="10dp"
+        android:text="Lokasi" />
+
+    <EditText
+        android:id="@+id/lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView6"/>
+
+
+    <Button
+        android:id="@+id/btSimpan"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lokasi"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="-7dp"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btSimpan"
+        android:text="Kembali"
+        android:layout_below="@id/lokasi"/>
+
+</RelativeLayout>
+</ScrollView>

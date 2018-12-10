@@ -44,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
     private void login() {
         String username = this.etUsername.getText().toString();
         String password = this.etPassword.getText().toString();
-
         this.checkCredentials(username, password);
 
     }
 
     private void openHome() {
-        Intent intent = new Intent(this.getApplicationContext(), LayarHome.class);
+        Intent intent = new Intent(this.getApplicationContext(), LayarListDiary.class);
+        intent.putExtra("id_user",id_login);
         this.startActivity(intent);
     }
 

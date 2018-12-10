@@ -84,16 +84,16 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/user_profile_photo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/login_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/background_profile"
-        android:elevation="4dp"
-        android:src="@drawable/diary" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/user_profile_photo"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_below="@+id/login_title"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:background="@drawable/background_profile"-->
+        <!--android:elevation="4dp"-->
+        <!--android:src="@drawable/diary" />-->
 
     <TextView
         android:id="@+id/login_title"

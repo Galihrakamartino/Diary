@@ -20,8 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LayarHome" />
-        <activity android:name=".RegistrasiActivity"></activity>
+        <activity android:name=".RegistrasiActivity" />
+        <activity android:name=".LayarListDiary" />
+        <activity android:name=".layarInsertDiary"></activity>
     </application>
 
 </manifest>
